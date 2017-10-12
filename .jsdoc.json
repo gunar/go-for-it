@@ -1,0 +1,34 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": ["./src"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules/|docs|pegjs)"
+    },
+    "plugins": [
+        "plugins/markdown",
+        "plugins/summarize"
+    ],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": true,
+        "systemName": "remoteFileExplorer",
+        "linenums": true,
+        "collapseSymbols": false,
+        "inverseNav": true
+    },
+    "opts": {
+        "template": "./node_modules/docdash",
+        "encoding": "utf8",
+        "recurse": true,
+        "destination": "./docs/",
+        "private": true
+    },
+    "docdash": {
+        "static": false,  // Display the static members inside the navbar
+        "sort": true     // Sort the methods in the navbar
+    }
+}

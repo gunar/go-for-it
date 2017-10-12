@@ -1,0 +1,8 @@
+--colors
+--check-leaks
+--reporter dot
+--timeout 10000
+--ui bdd
+--use-colors
+--globals ords,__coverage__,__core-js_shared__
+--require intelli-espower-loader power-assert

@@ -1,0 +1,23 @@
+{
+  "all": true,
+  "branches": 80,
+  "cache": true,
+  "eager": true,
+  "check-coverage": false,
+  "exclude": [
+    "src/migrations/*.js"
+  ],
+  "include": [
+    "src/**/*.js"
+  ],
+  "report-dir": "./coverage",
+  "reporter": [
+    "text-summary"
+  ],
+  "watermarks": {
+    "branches": [75, 90],
+    "functions": [75, 90],
+    "lines": [75, 90],
+    "statements": [75, 90]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "go-for-it",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Async Control Flow without Exceptions nor Monads",
+  "engines": {
+    "node": "^8.5.0"
+  },
+  "homepage": "http://gunargessner.com/",
+  "author": {
+    "email": "me@gunargessner.com",
+    "name": "Gunar C. Gessner",
+    "url": "https://github.com/gunar"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "keywords": [
+    "async",
+    "await",
+    "control",
+    "flow",
+    "exception",
+    "error",
+    "catch"
+  ],
+  "devDependencies": {
+    "@invisible/eslint-config": "^1.1.4",
+    "@invisible/publish": "^1.1.8",
+    "eslint": "^4.7.2",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.5.3",
+    "nsp": "^2.8.0",
+    "nyc": "^11.2.1",
+    "power-assert": "^1.4.4",
+    "yarn": "^1"
+  },
+  "repository": "git@github.com:gunar/go-for-it.git",
+  "scripts": {
+    "coverage": "nyc report --reporter=lcov --reporter=html --reporter=text-summary --reporter=text",
+    "lint": "eslint --cache -f node_modules/eslint-formatter-pretty --ignore-path .gitignore --ignore-pattern gists .",
+    "pretest": "npm run lint",
+    "test": "npm run test-only",
+    "test-only": "NODE_ENV=test nyc mocha $(find test -name '*.spec.js')",
+    "test-watch": "mocha -w test/**/*.spec.js",
+    "posttest": "nsp check"
+  }
+}
