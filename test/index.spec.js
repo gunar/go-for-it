@@ -16,6 +16,8 @@ describe('go', () => {
     assert(! result)
   })
 
+  // According to You Don't Know JavaScript
+  // https://github.com/getify/You-Dont-Know-JS/blob/31e1d4ff600d88cc2ce243903ab8a3a9d15cce15/types%20%26%20grammar/ch3.md#date-and-error
   const nativeExceptions = [
     EvalError,
     RangeError,
