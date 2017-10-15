@@ -38,8 +38,7 @@
   "scripts": {
     "lint": "eslint --cache -f node_modules/eslint-formatter-pretty --ignore-path .gitignore .",
     "pretest": "npm run lint",
-    "test": "npm run test-only",
-    "test-only": "NODE_ENV=test mocha $(find test -name '*.spec.js')",
+    "test": "mocha test/**/*.spec.js",
     "test-watch": "mocha -w test/**/*.spec.js"
   }
 }
