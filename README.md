@@ -4,7 +4,7 @@
 
 Error handling à la golang.
 
-Read the blog post
+Read the blog post:
 > [Async Control Flow without Exceptions nor Monads](https://medium.com/@gunar/async-control-flow-without-exceptions-nor-monads-b19af2acc553)
 
 
