@@ -2,10 +2,10 @@
 
 [![CircleCI](https://circleci.com/gh/gunar/go-for-it.svg?style=svg)](https://circleci.com/gh/gunar/go-for-it)
 
-Async Control Flow without Exceptions nor Monads.
+Error handling à la golang.
 
 Read the blog post
-> TODO
+> [Async Control Flow without Exceptions nor Monads](https://medium.com/@gunar/async-control-flow-without-exceptions-nor-monads-b19af2acc553)
 
 
 ## Installation
