@@ -1,7 +1,7 @@
 {
   "name": "go-for-it",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Async Control Flow without Exceptions nor Monads",
   "engines": {
     "node": "^8.5.0"
